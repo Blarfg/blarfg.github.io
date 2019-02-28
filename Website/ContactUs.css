@@ -1,0 +1,110 @@
+/*This CSS document is brought to you by Aubrey Stellman, who has now realized how much of a pain web development is...*/
+
+
+/*Refers to the container for the background image at the top of the page*/
+.topimage {
+  height: 80%; /*sets height of the image to 80% of the screen*/
+  width: 100%; /*sets width to the entire size of the page*/
+}
+
+/*Refers to the actual image at the top*/
+.topimage img {
+  max-height: 100%; /*height cannot exceed 100% of the screen*/
+  width: 100%; /*sets width to the width of the whole screen*/
+  margin: 0px 0px; /*no margin so no space on side*/
+  position: relative; /*will be positioned relative to its normal position-- will resize with window if window is resized*/
+  overflow: hidden; /*if element is too big for container, the extra will be hidden*/
+  height: 600px;
+}
+
+/*refers to the entire division of contact methods, links, the grid, and all*/
+.contactmethods {
+  margin-left: 200px; /*there will be a 200 pixel wide space between the left side of the screen and where the list of contact methods is*/
+  height: 600px; /*the div for the contact method list will be 600 pixels tall*/
+}
+
+/*refers to the gris of methods and links*/
+.methodlist {
+  display: grid; /*makes the list of contact methods and their respective links into a grid layout to line them up nicely*/
+  grid-template-columns: 1fr 4fr; /*the method of contact will be 1/5 of the width and the links will be the remaining 4/5 of it*/
+  grid-template-rows: 5px 5px 5px 5px 5px; /*each row will be 5 pixels tall*/
+}
+
+/*refers to the list of contact methods in the left column*/
+.platforms {
+  grid-column: 1 / 2; /*makes each contact platform only in the first column since for some reason the upper limit of CSS's grid-column and grid-row attributes is exclusive*/
+  grid-row-start: 1; /*makes the platform list start at row 1 and go to the bottom edge of the grid*/
+  height: 600px;
+}
+
+/*refers to the links for each social media platform*/
+.links {
+  grid-column-start: 2; /*makes the link list start at column 2 and go to the right edge of the grid*/
+  grid-row-start: 1; /*makes the link list start at row 1 and go to the bottom edge of the grid*/
+  height: 600px;
+}
+
+/*Everything in this section applies to the menu itself (class header in the HTML)*/
+.header {
+  padding: 30px;
+  text-align: center; /*centers all text in the menu*/
+  background: #23262c; /*sets the menu to an even darker gray then the page- so more like Emily's soul, because she's Satan*/
+  color: white; /*sets text color to white*/
+  font-size: 15px; /*font size of 15 pixels becaus now we're such rebels that we're not even using pt*/
+}
+
+/*Everything in this section applies to any links found within the menu (each item that points to one of the webpages)*/
+.header a {
+  color: white;
+  text-decoration: none;
+  /*defaults the links in the menu to being white and not underlined, as opposed to all other links, which will be green and underlined*/
+}
+
+/*Everything in this section applies to any links found within the menu BUT ONLY ON HOVER!!!*/
+.header a:hover {
+  color: rgb(0,217,0); /*Everyone's favorite shade of green as the text color*/
+  text-decoration: underline; /*underlines the links in the menu upon hover*/
+}
+
+/*Refers to the grid layout of the menu*/
+.grid1 {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto; /* there's a lot of autos here but it sets up 9 columns and that's all you needa know*/
+  grid-gap: 50px; /*Puts 50 pixels between each element of the grid*/
+}
+
+/*Refers to each actual item in the menu (Home, Sponsors, Gallery, etc)*/
+.item1 {
+  font-size: 15px;
+  text-align: center;
+  color: #ddd;
+  font-family: arial black, monaco, monospace; /*another font lineup but different this time*/
+}
+
+/*refers to any h1 elements (headings) in the HTML doc*/
+h1 {
+  font-weight: bold; /*all headings will be bold*/
+  text-decoration: underline; /*all headings will be underlined*/
+  font-family: tahoma, arial, helvetica, sans-serif; /*the lineup of fonts that will be used; with helvetica as the first piority but if your computer is terrible then it can just move on to the next one*/
+}
+
+/*applies to the ENTIRE BODY of the webpage*/
+body {
+  background-color: #34373d; /*background color on the whole page is a dull, dark gray- just like my soul*/
+  color: #ffffff; /*text color on the whole page is pure white*/
+  margin: 0 auto; /*no top or bottom margin; automatically set left and right margins*/
+  padding-bottom: 0;
+}
+
+/*applies to ALL PARAGRAPH ELEMENTS of the webpage*/
+p {
+  font-size: 14pt; /*all p elements will be 14 point font- two sizes bigger than what your English teacher will tell you because we're rebels like that*/
+  font-family: tahoma, arial, helvetica, sans-serif; /*the same lineup of fonts from h1*/
+}
+
+/*applies to ALL LINKS in the webpage*/
+a {
+  color: rgb(0,217,0); /*links are all colored with the best green to exist- thunderchicken green*/
+}
+
+/*See ContactUs.html for more details regarding the actual structure of the site*/

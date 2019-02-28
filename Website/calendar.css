@@ -1,0 +1,56 @@
+/*This was coded by Aubrey Stellman and I hope someone sees this so I at least know I made some kind of mark here*/
+
+/*refers to the entire body of the page*/
+body {
+  background-color: #34373d; /*sets the background color of the whole page body to a dark gray*/
+}
+
+/*refers to all headings in the page*/
+h1 {
+  color: #ffffff; /*all heading text will be white*/
+  font-family: tahoma, arial, helvetica, sans-serif; /*fonts to use on page in headings*/
+  font-size: 36pt; /*all headings will be in 36 point font*/
+}
+
+/*refers to the frame that holds the google calendar*/
+iframe {
+  width: 100%;
+  height: 700px;
+}
+
+/*Everything in this section applies to the menu itself (class header in the HTML)*/
+.header {
+  padding: 30px;
+  text-align: center; /*centers all text in the menu*/
+  background: #23262c; /*sets the menu to an even darker gray then the page- so more like Emily's soul, because she's Satan*/
+  color: white; /*sets text color to white*/
+  font-size: 15px; /*font size of 15 pixels becaus now we're such rebels that we're not even using pt*/
+}
+
+/*Everything in this section applies to any links found within the menu (each item that points to one of the webpages)*/
+.header a {
+  color: white;
+  text-decoration: none;
+  /*defaults the links in the menu to being white and not underlined, as opposed to all other links, which will be green and underlined*/
+}
+
+/*Everything in this section applies to any links found within the menu BUT ONLY ON HOVER!!!*/
+.header a:hover {
+  color: rgb(0,217,0); /*Everyone's favorite shade of green as the text color*/
+  text-decoration: underline; /*underlines the links in the menu upon hover*/
+}
+
+/*Refers to the grid layout of the menu*/
+.grid1 {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto; /* there's a lot of autos here but it sets up 9 columns and that's all you needa know*/
+  grid-gap: 50px; /*Puts 50 pixels between each element of the grid*/
+}
+
+/*Refers to each actual item in the menu (Home, Sponsors, Gallery, etc)*/
+.item1 {
+  font-size: 15px; /*text in menu has font size of 15 pixels*/
+  text-align: center;
+  color: #ddd;
+  font-family: arial black, monaco, monospace; /*another font lineup but different this time*/
+}

@@ -1,0 +1,53 @@
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #23262c;
+  color: white;
+  font-size: 15px;
+}
+
+.grid1 {
+  display:grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+  grid-gap: 50px
+}
+
+.item1 {
+  font-size: 15px;
+  text-align: center;
+  color: #ddd;
+  font-family: arial black, monaco, monospace;
+}
+h1{
+  color:rgb(0,217,0);
+  text-align: center;
+  font-size: 60px;
+}
+.grid2 {
+  display:grid;
+  grid-template-columns:auto auto  auto auto;
+  grid-gap:15px;
+  align-content:center;
+}
+.grid3 {
+  display:grid;
+  grid-template-columns: auto;
+  grid-gap:15px;
+  align-content:center;
+}
+a {
+  color:rgb(0,217,0);
+}
+div.gallery {
+  margin: 5px;
+  width: 250px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}

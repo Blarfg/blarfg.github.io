@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="homePage.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="Favicon.png" type="image/gif" sizes="16x16">
+    <title>Home</title
+  </head>
+  <body style="background-color:#34373d;">
+        <div class="header">
+          <div class= "grid1">
+            <div class="item1"><img src="Team-217-Logo.png"></div>
+            <div class="item1">Home</div>
+            <div class="item1">Sponsors</div>
+            <div class="item1">The Team</div>
+            <div class="item1">Calender</div>
+            <div class="item1">Sponsor Updates</div>
+            <div class="item1">Gallery</div>
+            <div class="item1">Contact</div>
+            <div class="item1">Login</div>
+          </div>
+        </div>
+    <div class="achievements2018">
+      <br></br>
+      <br></br>
+      <br></br>
+      <div class="textbox">
+        <h1><span>ThunderChickens #217</span></h1>
+        <h1><span>2018 Achievements<br></span></h1>
+        <h2><span class="award">Finalist</span><span> - Detroit Einstein Field (World Championship)</span></h2>
+        <h2><span class="award">Champion</span<span> - Carson Division (World Championship)</span></h2>
+        <h2><span class="award">Champion</span><span> - Dow Division (State Championship)</span></h2>
+        <h2><span class="award">UNDEFEATED</span><span> - Marysville</span></h2>
+        <h2><span class="award">Quarterfinalist</span><span> - Greater Pittsburgh Regional</span></h2>
+        <h2><span class="award">Finalist</span><span> - Kettering #2</span></h2>
+      </div>
+      <br>
+      <br>
+      <br>
+    </div>
+    <div class="info">
+      <h2>What is FIRST?</h2>
+        <p>FIRST (For Inspiration and Recognition of Science and Technology) is
+          an international organization dedicated to spreading engineering and
+          robotics to students. There are programs available to all students
+          grades K-12, each with competitions and a different game. In FIRST
+          Lego League and FIRST Lego League Jr, the competitions for elementary
+          school students, motorized Lego pieces are used to build a robot.
+          In the FIRST Tech Challenge, for middle schoolers, small tabletop
+          robots are built. ThunderChickens is a FIRST Robotics Competition
+          (FRC) team. To find out more about what FIRST is, click the link
+           <a href="https://www.firstinspires.org/" target="_blank">here.</a></p>
+        <hr>
+
+      <h2>About FRC</h2>
+        <p>FRC is for high school students grades 9-12. Founded in 1992, FRC is
+          the original FIRST Program, where teams build 120-pound robots to
+          compete in a new game each year. Combining the excitement of sport
+          with the rigors of science and technology, FIRST Robotics Competition
+          is called "the ultimate sport for the mind" and "the hardest fun you’ll
+          ever have." Under strict rules, limited resources, and an intense
+          six-week time limit, teams of students are challenged to build and
+          program robots to play a difficult field game against and with competitors,
+          as well as raise funds and work well with the rest of their team. It’s
+          as close to a real-world engineering experience a student can get.
+          Professionals often volunteer as mentors and lend their time and talents
+          to guide their respective teams.<br></br>Each season ends with an
+           exciting FIRST Championship.<br></br>To learn more about FRC, click
+           <a href="https://www.firstinspires.org/robotics/frc" target="_blank">
+          here.</a></p>
+          <hr>
+
+        <h2>About the ThunderChickens</h2>
+          <p>ThunderChickens is an FRC team, based out of Sterling Heights, Michigan
+             and the Utica Community Schools (UCS) school district. We operate
+             out of space in a Ford plant and are fortunate to have the workspace we
+             do thanks to our generous sponsor Ford Motor Company.<br></br>The
+             2019 Season is the ThunderChickens's 21st season. We are lucky to
+             have the wealth of knowledge of three mentors that have been there
+             the entire 21 years- Ron Archeene, Mike Attan, and Bill Baedke.<br></br>
+             Over the past 20 seasons, the ThunderChickens have gone to worlds 19
+             times, been on Einstein field 8 times, been to Einstein finals 4
+             times, and are two-time FRC World Champions.</p>
+      </div>
+      <h2 class= "events">2019 Upcoming Events</h2>
+      <div class="grid">
+        <div class="item">Kettering #2 | District Event</div>
+        <div class="item">Kettering University, Flint, MI</div>
+        <div class="item">Fri. March 8 - Sat. March 9</div>
+        <div class="item">Finger Lakes | Regional Event</div>
+        <div class="item">Rochester Institute of Technology, Rochester, NY</div>
+        <div class="item">Thu. March 14 - Sat. March 16</div>
+        <div class="item">Marysville | District Event</div>
+        <div class="item">Marysville High School, Marysville, MI</div>
+        <div class="item">Fri. March 29 - Sat. March 30</div>
+      </div>
+      <div>
+        <img src="Cool_Pic.png" alt="thunderchicken logo"class="counter">
+          <div class="text">
+            <p>Countdown to Bag Day!</p>
+            <!-- Display the countdown timer in an element -->
+              <p id="demo" class="text2"></p>
+                <script>
+                var deadline = new Date("Feb 19, 2019 23:59:59").getTime();
+                var x = setInterval(function() {
+                  var now = new Date().getTime();
+                  var t = deadline - now;
+                  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+                  var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
+                  var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+                  var seconds = Math.floor((t % (1000 * 60)) / 1000);
+                  document.getElementById("demo").innerHTML = days + " days: "+ hours + " hours: " +
+                   minutes + " minutes: " + seconds + " seconds";
+                      if (t < 0) {
+                          clearInterval(x);
+                          document.getElementById("demo").innerHTML = "EXPIRED";
+                        }
+                      }, 1000);
+                </script>
+            <p style="font-size: 30px">
+               Want to get the latest TC news? Join our email blasts.Click <a
+               style="color:rgb(217,0,0);"class="email"href="https://docs.google.com/forms/d/e/1FAIpQLSdtyymuOifxNgZHYs7qr8MhsYaFreOatyy6ARr3jksM3cwLuQ/viewform"
+              target="_blank">here to join our email blasts.</a></p>
+            <p style="font-size: 30px">Click to the links below to go to our twitter, facebook, and instagram acounts!</p>
+            <a href="https://twitter.com/tc_217" target="_blank"><img class="link" src="twitter.jpg"></a>
+            <a href="https://www.facebook.com/Team217/" target="_blank"><img class="link" src="facebook.png"></a>
+            <a href="https://www.instagram.com/tc_217/?hl=en" target="_blank"><img class="link" src="instagram.png"></a>
+          </div>
+        </div>
+<!--      <div class="footer">
+        <div class="grid2">
+          <div class="item2"><a href="https://twitter.com/tc_217"><img class="link" src="twiter.png"></a></div>
+          <div class="item2"><a href="https://www.facebook.com/Team217/"><img class="link" src="facebook.jpg"></a></div>
+          <div class="item2"><a href="https://www.instagram.com/tc_217/?hl=en"><img class="link" src="instagram.png"></a></div>
+        </div>
+      </div> -->
+    </body>
+</html>

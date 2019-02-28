@@ -1,0 +1,133 @@
+/*This CSS document was created by Aubrey Stellman :^)-->
+
+/*Everything in this section applies to the menu itself (class header in the HTML)*/
+.header {
+  padding: 30px;
+  text-align: center; /*centers all text in the menu*/
+  background: #23262c; /*sets the menu to an even darker gray then the page- so more like Emily's soul, because she's Satan*/
+  color: white; /*sets text color to white*/
+  font-size: 15px; /*font size of 15 pixels becaus now we're such rebels that we're not even using pt*/
+}
+
+/*Everything in this section applies to any links found within the menu (each item that points to one of the webpages)*/
+.header a {
+  color: white;
+  text-decoration: none;
+  /*defaults the links in the menu to being white and not underlined, as opposed to all other links, which will be green and underlined*/
+}
+
+/*Everything in this section applies to any links found within the menu BUT ONLY ON HOVER!!!*/
+.header a:hover {
+  color: rgb(0,217,0); /*Everyone's favorite shade of green as the text color*/
+  text-decoration: underline; /*underlines the links in the menu upon hover*/
+}
+
+/*Refers to the grid layout of the menu*/
+.grid1 {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto; /* there's a lot of autos here but it sets up 9 columns and that's all you needa know*/
+  grid-gap: 50px; /*Puts 50 pixels between each element of the grid*/
+}
+
+/*Refers to each actual item in the menu (Home, Sponsors, Gallery, etc)*/
+.item1 {
+  font-size: 15px;
+  text-align: center;
+  color: #ddd;
+  font-family: arial black, monaco, monospace; /*another font lineup but different this time*/
+}
+
+/*applies to the ENTIRE BODY of the webpage*/
+body {
+    background-color: #34373d; /*background color on the whole page is a dull, dark gray- just like my soul*/
+}
+
+/*refers to the ucs and mst pictures through their respective IDs*/
+#ucs, #mst {
+  background-color: #FDFDFD; /*sets background color of the ucs and mst pictures so that the background of the actual picture blends in (since the background is bigger than the picture)*/
+}
+
+/*refers to all pictures in the academic sponsor section*/
+.academicsponsorpicture {
+  /*all academic sponsor pics are 400 pixels by 400 pixels*/
+  height: 400px;
+  width: 400px;
+}
+
+/*refers to all logo pictures that aren't academic (because all those are smaller than the academic pictures)*/
+.sponsorpicture {
+  /*all logos of non-academic sponsors are 300 pixels by 300 pixels*/
+  height: 300px;
+  width: 300px;
+  text-align: center; /*puts image alts in the center if images won't load*/
+  font-weight: bold; /*makes image alt text bold*/
+}
+
+/*refers to academic logos AND non-academic logos*/
+.academicsponsorpicture, .sponsorpicture {
+  object-fit: contain; /*will resize the image so that it fits the container but doesn't change its aspect ratio*/
+  border-radius: 10px; /*makes the corner rounded because it looks nice*/
+  position: inherit;
+}
+
+/*refers to CSI image through its ID*/
+#csi {
+  background-color: #FFFFFF;
+}
+
+/*refers to all sponsor logos BUT ONLY ON HOVER*/
+.academicsponsorpicture:hover, .sponsorpicture:hover {
+	border: 1px solid white; /*makes a small border when images are hovered over*/
+  opacity: 0.5; /*lowers images' opacity when hovered over*/
+  box-shadow: 0px 15px rgba(0,0,0,0.2); /*makes small box shadows when images are hovered over*/
+}
+
+/*refers to the grid of academic sponsors*/
+.academicgrid {
+  display: grid; /*puts all the images into a grid layout*/
+  grid-template-columns: 400px 400px 400px; /*makes 3 columns, each 400 pixels wide*/
+  justify-content: center; /*makes all the images go to the center of their containers*/
+  grid-column-gap: 5%; /*puts a small gap between columns of images*/
+}
+
+/*refers to the grids of gold sponsors AND silver sponsors*/
+.goldgrid, .silvergrid {
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: auto; /*automatic template for rows based on how many images are in the grid*/
+  grid-gap: 5%;
+  justify-content: center;
+  /*does pretty much the same thing as the section for the academic grid, but smaller columns for smaller images*/
+}
+
+/*refers to ALL paragraph elements in the page*/
+p {
+  color: #ffffff; /*makes all p text on the page white*/
+  font-family: tahoma, arial, helvetica, sans-serif; /*fonts that should be used, in order of priority and backups in case a computer can't load one*/
+  font-size: 14pt; /*makes font size of all paragraph elements 14 point*/
+}
+
+/*refers to all p elements within the class sponsorpicture (the two companies that don't have logos or websites)*/
+.sponsorpicture p {
+   margin: 0 0; /*no margins*/
+}
+
+/*refers to ALL H1 ELEMENTS in the program (headings)*/
+h1 {
+  color: #ffffff; /*makes all headings white*/
+  font-family: tahoma, arial, helvetica, sans-serif;
+  font-size: 36pt; /*assigns 36 point font to all headings*/
+}
+
+/*refers to ALL LINKS in the page*/
+a {
+  color: rgb(0,217,0); /*makes links the color of ThunderChicken green*/
+}
+
+/*refers to all list elements on the webpage*/
+li {
+  font-family: tahoma, arial, helvetica, sans-serif;
+  margin-left: 5%; /*makes a small margin on the left side of the list so that the bullets aren't snooshed on the left side*/
+  font-size: 24pt; /*assigns 24 point font to all list elements*/
+  color: white; /*makes all list elements the color white*/
+}
