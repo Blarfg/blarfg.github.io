@@ -1,0 +1,35 @@
+body {
+  background-color: #3c3f44;
+
+
+}
+.text{
+color: white;
+font-family: arial black, monaco, monospace;
+
+}
+
+.mentor-grid1{
+display: grid;
+grid-column-start: 1 ;
+grid-column-end: 1 ;
+grid-row-start:1;
+grid-row-end:3;
+grid-template-columns: 200px 200px 200px;
+
+grid-template-rows: 100px;
+padding: 10px;
+align-content: center;
+
+
+
+}
+
+.mg1 p{
+color: white;
+padding: 10px;
+font-size: 22px;
+
+
+
+}
