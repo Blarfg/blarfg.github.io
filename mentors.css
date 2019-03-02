@@ -33,6 +33,13 @@ font-size: 22px;
 
 
 }
+.events {
+  font-size: 40px;
+  color: rgb(0,217,0);
+  background-color: #34373d;
+  font-family: arial black, monaco, monospace;
+}
+
 .header {
   padding: 30px;
   text-align: center;
