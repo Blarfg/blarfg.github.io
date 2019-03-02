@@ -29,9 +29,9 @@ align-content: center;
 color: white;
 padding: 10px;
 font-size: 22px;
-
-
-
+}
+a {
+  color: rgb(0,217,0);
 }
 .events {
   font-size: 40px;
