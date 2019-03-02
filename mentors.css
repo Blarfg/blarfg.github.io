@@ -33,3 +33,21 @@ font-size: 22px;
 
 
 }
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #23262c;
+  color: white;
+  font-size: 15px;
+}
+.grid1 {
+  display:grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+  grid-gap: 50px
+}
+.item1 {
+  font-size: 15px;
+  text-align: center;
+  color: #ddd;
+  font-family: arial black, monaco, monospace;
+}
